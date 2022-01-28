@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 30px 50px;
+  background-color: rgb(59, 59, 59);
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  color: #f4f4f4;
+  line-height: 1.2;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.alert {
+  margin-top: 10px;
+}
+
+.choose {
+  width: 100px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.items {
+  font-size: xx-large;
+  display: inline-block;
+  padding: 100px 100px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.2s ease-in-out;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom left, #fc4349, #6dbcdb);
+  color: #f4f4f4;
+}
+
+.items:hover {
+  transform: scale(0.95);
+}
+
+.score {
+  font-size: large;
+  font-weight: 500;
+  margin-top: 10px;
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#winner {
+  font-size: xx-large;
+  font-weight: 600;
+}
