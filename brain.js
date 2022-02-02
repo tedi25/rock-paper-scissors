@@ -65,7 +65,7 @@ function playGame() {
   com.textContent = `Skor komputer: ${comScore}`;
 
   if (playerScore == 5) {
-    winner.textContent = "Kamu menang selamat";
+    winner.textContent = "Selamat kamu menang!";
     playerScore = 0;
     comScore = 0;
     // Swal.fire({
@@ -75,7 +75,7 @@ function playGame() {
     //   footer: '<a href="">Why do I have this issue?</a>',
     // });
   } else if (comScore == 5) {
-    winner.textContent = "Kamu kalah :(";
+    winner.textContent = "Yah kamu kalah :(";
     playerScore = 0;
     comScore = 0;
     // Swal.fire({
